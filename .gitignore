@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Environment variables
+.env
+
+# React build output
+build/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+
+
+added .gitignore for node and react
