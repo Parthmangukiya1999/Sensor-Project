@@ -1,6 +1,83 @@
-(●'◡'●)!
-This project is not just about building a sensor—it’s about solving a real-world problem efficiently and intelligently. Parking issues are a daily challenge, and by designing a system that works correctly and is easy to access, we are contributing to smarter, more convenient urban spaces. From hardware to software, every aspect matters, and our focus on accuracy, reliability, and usability ensures that our solution makes a difference. Challenges will come, but with teamwork, persistence, and innovation, we can turn this idea into a practical and impactful system. The future of smart parking starts here!
-(●'◡'●)!
+# 🌡️ Sensor Project – Real-time Temperature & Humidity Monitor
+
+This project reads temperature and humidity data from surrounding areas using a Raspberry Pi Pico and displays it beautifully on a React dashboard with Google Charts. All sensor data is sent to a Node.js API and stored securely in Azure Cloud.
+
+---
+
+## 🧠 Features
+
+- 📡 Collects live sensor data (temperature & humidity)
+- 📊 Interactive charts using Google Charts
+- ☁️ Stores data in Microsoft Azure
+- 🧠 Frontend built with React
+- 🚀 Backend using Node.js & Express
+- 💾 Simple and scalable sensor-to-cloud architecture
+
+---
+
+## 🛠 Tech Stack
+
+| Area       | Tech           |
+|------------|----------------|
+| Microcontroller | Raspberry Pi Pico |
+| Frontend   | React.js, Google Charts |
+| Backend    | Node.js, Express.js |
+| Cloud      | Microsoft Azure |
+| Charts     | Google Charts API |
+
+---
+
+## 📁 Folder Structure
+
+📦 sensor-project ┣ 📂 backend # Node.js API code ┣ 📂 frontend # React UI ┣ 📂 pico-code # Raspberry Pi Pico sensor code ┣ 📂 docs # Documentation files & images ┗ 📜 README.md
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/sensor-project.git
+cd sensor-project
+cd backend
+npm install
+npm start
+cd frontend
+npm install
+npm start
+
+
+📸 Screenshots
+
+Live graphs and real-time readings displayed with Google Charts.
+
+✍️ Authors
+Built by:
+
+Parth Mangukiya
+
+Umza
+
+Shoshe
+
+Krishna
+
+Khuman Rana
+
+📄 License
+This project is open-source and available under the MIT License.
+
+🌐 Connect with Us
+If you'd like to collaborate, feel free to reach out!
+
+
+
+
+---
+
+Let me know if you'd like this in a downloadable file, or if you want me to generate a banner image to go with it!
 
 
 
