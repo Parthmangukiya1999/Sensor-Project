@@ -1,4 +1,4 @@
-# 🌡️ Sensor Project – Real-time Temperature & Humidity Monitor
+![Sensor Project](https://github.com/user-attachments/assets/db2457da-cc3b-4820-add6-0e46244db04f)# 🌡️ Sensor Project – Real-time Temperature & Humidity Monitor
 
 This project reads temperature and humidity data from surrounding areas using a Raspberry Pi Pico and displays it beautifully on a React dashboard with Google Charts. All sensor data is sent to a Node.js API and stored securely in Azure Cloud.
 
@@ -72,9 +72,6 @@ This project is open-source and available under the MIT License.
 🌐 Connect with Us
 If you'd like to collaborate, feel free to reach out!
 
-
-
-
 ---
 
 Let me know if you'd like this in a downloadable file, or if you want me to generate a banner image to go with it!
@@ -82,3 +79,6 @@ Let me know if you'd like this in a downloadable file, or if you want me to gene
 
 
 [sensors.docx](https://github.com/user-attachments/files/18722293/sensors.docx)
+![Sensor Project](https://github.com/user-attachments/assets/30a3a0c4-5e1c-4f10-b9e7-f6905294c127)
+
+
