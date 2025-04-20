@@ -64,7 +64,7 @@ Shoshe
 
 Krishna Chaudhary Tharu 
 
-Khuman Rana
+Khuman Singh Rana
 
 📄 License
 This project is open-source and available under the MIT License.
