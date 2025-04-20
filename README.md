@@ -62,7 +62,7 @@ Umza
 
 Shoshe
 
-Krishna
+Krishna Chaudhary Tharu 
 
 Khuman Rana
 
