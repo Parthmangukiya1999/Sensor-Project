@@ -60,7 +60,7 @@ Parth Mangukiya
 
 Umza
 
-Shoshe
+Shoshe Asanin
 
 Krishna Chaudhary Tharu 
 
