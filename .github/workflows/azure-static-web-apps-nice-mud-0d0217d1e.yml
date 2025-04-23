@@ -3,7 +3,7 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main  # Make sure this matches your branch
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -22,21 +22,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18'  
       - name: Install dependencies
-        run: npm install
+        run: npm install  
       - name: Build project
-        run: npm run build
+        run: npm run build  
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_MUD_0D0217D1E }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for GitHub integrations (e.g., PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"  # If your app is in the root folder, otherwise change to your folder path
-          api_location: ""   # If you don't have an API, leave it empty
-          output_location: "dist"  # The default folder for Vite build output
+          app_location: "/frontend"   # Set this to the location of your app ("/" if in the root folder)
+          api_location: ""    # Leave empty if you don’t have an API
+          output_location: "dist"  # Output folder after build (for Vite, this is "dist")
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
