@@ -19,24 +19,32 @@ jobs:
         with:
           submodules: true
           lfs: false
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  
+          node-version: '18'  # Specify the Node.js version you're using
+
       - name: Install dependencies
-        run: npm install  
+        run: |
+          cd frontend
+          npm install  # Installs dependencies listed in frontend/package.json
+
       - name: Build project
-        run: npm run build  
+        run: |
+          cd frontend
+          npm run build  # Builds the app, output will be in the dist/ folder
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_MUD_0D0217D1E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_YOUR_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/frontend"   # Set this to the location of your app ("/" if in the root folder)
-          api_location: ""    # Leave empty if you don’t have an API
-          output_location: "dist"  # Output folder after build (for Vite, this is "dist")
+          app_location: "/frontend"  # Location of your app code
+          api_location: ""  # Leave empty if no API
+          output_location: "frontend/dist"  # Location of the built output folder
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -47,5 +55,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_MUD_0D0217D1E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_YOUR_TOKEN }}
           action: "close"
